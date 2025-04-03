@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envelope with Letter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- <div class="envelope" onclick="toggleLetter()">
+    <div class="flap"></div>
+    <div class="letter-container">
+      <div class="letter">
+        <p>Dear, My Love ❤️</p>
+        <p>Happy Monthsary! I'm so grateful for all the memories we've shared. Here's to many more months of laughter, love, and joy together!</p>
+        <p>With love, [Your Name]</p>
+      </div>
+    </div>
+  </div> -->
+  <audio id="audioPlayer" src="bg.mp3"></audio>
+  <h1>Please open the envelope</h1>
+  <div class="container">
+    <div class="envelope-wrapper">
+        <div class="envelope">
+            <div class="letter">
+                <div class="text">
+                    <strong>Hi Love.</strong>
+                    <p>
+                        Happy Monthsary Lovee, I have something for you. 
+                        You can click "I LOVE YOU " to view my message.
+                        <br><a href="https://open.spotify.com/lyrics">I LOVE YOU</a>
+                    </p>
+                    <div class="from">
+                      <p>Love,</p>
+                      <p>Christian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="heart"></div>
+    </div>
+</div>
+<script>
+    const envelope = document.querySelector('.envelope-wrapper');
+    audioPlayer.volume = 1.0;
+    envelope.addEventListener('click', () => {
+      audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();  // Play or pause audio
+      envelope.classList.toggle('flap');  // Toggle 'flap' class      
+    });
+</script>
+</body>
+</html>
